@@ -9,9 +9,6 @@ public class Conexion {
         Connection conexion = null;
         try {
             conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/basket_java", "root", "");
-            if (conexion != null){
-                System.out.println("Conexión exitosa!");
-            }
         } catch (SQLException e) {
             System.out.println(e);
         }

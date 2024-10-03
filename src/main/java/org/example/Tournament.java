@@ -15,6 +15,22 @@ public class Tournament {
         this.games = new ArrayList<>();
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     // Add a team to the tournament
     public void addTeam(Team team) {
         teams.add(team);
@@ -25,10 +41,6 @@ public class Tournament {
         games.add(game);
     }
 
-    // Getters
-    public String getName() {
-        return name;
-    }
 
     public List<Team> getTeams() {
         return teams;

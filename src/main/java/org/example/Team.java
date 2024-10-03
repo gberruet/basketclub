@@ -13,6 +13,14 @@ public class Team {
         this.players = new ArrayList<>();
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     // Add a player to the team
     public void addPlayer(Player player) {
         players.add(player);
@@ -21,6 +29,10 @@ public class Team {
     // Getters
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public List<Player> getPlayers() {
